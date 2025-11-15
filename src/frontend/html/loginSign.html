@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mindfull DevOps Bootcamp — Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main class="container" id="container" role="main">
+      <aside class="form-container sign-up" aria-labelledby="signup">
+        <form novalidate>
+          <h1>Create Account</h1>
+          <div class="social-icons">
+            <a href="#" class="icon">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <span>Or Use Your Email for registration</span>
+          <input type="text" placeholder="name" />
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button class="signUpBtn">sign-up</button>
+          <div class="hidden">
+            <h3>Already Have an Account?</h3>
+            <button id="hiddenBtn1">sign-In</button>
+          </div>
+        </form>
+      </aside>
+      <aside class="form-container sign-in" aria-labelledby="signin">
+        <form novalidate>
+          <h1>Sign In</h1>
+          <div class="social-icons">
+            <a href="#" class="icon">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <span>Or Use Your Email Password</span>
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button class="signInBtn">sign-in</button>
+          <a href="#">Forget Your Password</a>
+          <div class="hidden">
+            <h3>New User</h3>
+            <button id="hiddenBtn2">sign-Up</button>
+          </div>
+        </form>
+      </aside>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Enter Your Personal Details to use all of site feature</p>
+            <button id="switchToLogin">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello Friends!!</h1>
+            <p>
+              Register with Your Personal Details to use all of site feature
+            </p>
+            <button id="switchToSignup">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <script>
+      // Small client-side validation + UX
+      (function () {
+        const form = document.getElementById("loginForm");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const emailMsg = document.getElementById("emailMsg");
+        const passMsg = document.getElementById("passMsg");
+        const eye = document.querySelector(".eye");
+
+        eye.addEventListener("click", () => {
+          const isPwd = password.type === "password";
+          password.type = isPwd ? "text" : "password";
+          eye.textContent = isPwd ? "🙈" : "👁️";
+        });
+
+        function validateEmail(v) {
+          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+        }
+
+        function show(el, msg, kind) {
+          el.style.display = "block";
+          el.textContent = msg;
+          el.className = kind === "error" ? "error" : "success";
+        }
+        function hide(el) {
+          el.style.display = "none";
+          el.textContent = "";
+        }
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let ok = true;
+          hide(emailMsg);
+          hide(passMsg);
+          if (!validateEmail(email.value.trim())) {
+            show(emailMsg, "Please enter a valid email address.", "error");
+            ok = false;
+          }
+          if (password.value.length < 8) {
+            show(passMsg, "Password must be at least 8 characters.", "error");
+            ok = false;
+          }
+
+          if (!ok) return;
+
+          // fake loading state
+          const btn = form.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          btn.textContent = "Signing in...";
+
+          // Simulate send - replace this with real fetch/XHR to your auth endpoint
+          setTimeout(() => {
+            // simple fake success condition for demo
+            if (email.value.toLowerCase().includes("demo")) {
+              hide(emailMsg);
+              hide(passMsg);
+              alert("Signed in (demo). Redirecting to dashboard...");
+              // window.location.href = '/dashboard';
+            } else {
+              show(
+                passMsg,
+                "Invalid credentials. If you forgot your password, use the reset link.",
+                "error"
+              );
+            }
+            btn.disabled = false;
+            btn.textContent = "Sign in";
+          }, 1200);
+        });
+      })();
+    </script> -->
+    <script src="../script/script.js"></script>
+  </body>
+</html>
