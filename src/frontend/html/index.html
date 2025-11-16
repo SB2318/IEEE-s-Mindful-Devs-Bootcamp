@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindful Dev Bootcamp</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="../../assets/Meditation and Lotus Emblem.png"
+            class="logo"
+            alt="Mindful Logo"
+          />
+          <span>Mindful Devs</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Bootcamps</a></li>
+          <li><a href="#">Roadmaps</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+             <!-- Dark Mode Toggle -->
+          <button class="toggle-btn" onclick="toggleMode()">
+            🌙 Dark Mode
+          </button>
+          </li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <h1 class="title">Mindful Dev Bootcamp</h1>
+      <div class="changingText">
+        <span id="text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="subtitle">Level up your developer mindset</p>
+    </header>
+
+    <!-- DESCRIPTION -->
+    <section class="description">
+      <h2>Project Description</h2>
+      <p>
+        Mindful Dev Bootcamp is a practical developer training program crafted
+        to help you build real-world projects while improving your coding
+        discipline, focus, and clarity. Each day unlocks a new challenge that
+        strengthens your skills as a mindful developer.
+      </p>
+    </section>
+
+    <!-- CONTRIBUTORS -->
+    <section>
+      <h2>Contributors</h2>
+      <div class="contributors">
+        <div class="contributor-card">
+          <img src="https://avatar.iran.liara.run/public/12" alt="img1" />
+          <h3>Contributor Name 1</h3>
+          <p>Role / Task</p>
+        </div>
+        <div class="contributor-card">
+          <img src="https://avatar.iran.liara.run/public/47" alt="img2" />
+          <h3>Contributor Name 2</h3>
+          <p>Role / Task</p>
+        </div>
+        <div class="contributor-card">
+          <img src="https://avatar.iran.liara.run/public/29" alt="img3" />
+          <h3>Contributor Name 3</h3>
+          <p>Role / Task</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASKS -->
+    <section>
+      <h2>Bootcamp Tasks</h2>
+
+      <div class="day-box">
+        <h3>Day 1</h3>
+        <ul>
+          <li>Setup project structure</li>
+          <li>Create homepage layout</li>
+          <li>Responsive base UI</li>
+          <li>Prepare components</li>
+        </ul>
+      </div>
+
+      <div class="day-box">
+        <h3>Day 2</h3>
+        <ul>
+          <li>Build login/signup UI</li>
+          <li>Add smooth animations</li>
+          <li>Interactive panel switching</li>
+        </ul>
+      </div>
+
+      <div class="day-box">
+        <h3>Day 3</h3>
+        <ul>
+          <li>Dark mode integration</li>
+          <li>Finalize responsive UI</li>
+          <li>Test components</li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      function toggleMode() {
+        document.body.classList.toggle("dark");
+      }
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("open");
+      }
+
+      // changintext
+      const texts = ["Learn", "Code", "Grow"];
+      let curretnText = "";
+      let index = 0;
+      let count = 0;
+      let letter = "";
+      function type() {
+        if (count === texts.length) {
+          count = 0;
+        }
+        curretnText = texts[count];
+        letter = curretnText.slice(0, ++index);
+        document.getElementById("text").textContent = letter;
+        if (letter.length === curretnText.length) {
+          index = 0;
+          count++;
+          setTimeout(type, 1500);
+        } else {
+          setTimeout(type, 120);
+        }
+      }
+      type();
+    </script>
+  </body>
+</html>
