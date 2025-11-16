@@ -1,0 +1,54 @@
+.chat-header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: #fff;
+}
+
+.gemini-logo {
+  margin-right: 0.5rem;
+}
+
+.chat-bubble {
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.chat-bubble.user {
+  background: #e6e9eb;
+  align-self: flex-end;
+}
+
+.chat-bubble.ai {
+  background: #f1f3f4;
+  align-self: flex-start;
+}
+.chat-input-container {
+  display: flex;
+  padding: 0.5rem;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.chat-input-container button {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
