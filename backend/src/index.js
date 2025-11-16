@@ -7,7 +7,12 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use(express.json());
 const port = process.env.PORT || 3000;
+
+const authRoutes = require('./routes/auth');
+
+app.use('/auth', authRoutes);
 
 app.get('/', (req, res) => {
     res.send('API Is Working');
