@@ -23,27 +23,40 @@
             class="logo"
             alt="Mindful Logo"
           />
-          <span>Mindful Devs</span>
+          <span>Mindful DEV</span>
         </div>
 
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Bootcamps</a></li>
-          <li><a href="#">Roadmaps</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-             <!-- Dark Mode Toggle -->
-          <button class="toggle-btn" onclick="toggleMode()">
+          <li><a href="#community">Community</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="button-section hidden-desk">
+            <!-- Dark Mode Toggle -->
+            <!-- <button class="toggle-btn" onclick="toggleMode()">
             🌙 Dark Mode
-          </button>
-          </li>
+          </button> -->
+            <!-- sign in -->
+            <button class="loginSignup">
+              <a href="../html/loginSign.html">Login/Register</a>
+            </button>
+          </div>
         </ul>
-        <!-- Mobile Menu Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="button-section">
+          <!-- Dark Mode Toggle -->
+          <!-- <button class="toggle-btn" onclick="toggleMode()">
+            🌙 Dark Mode
+          </button> -->
+          <!-- sign in -->
+          <button class="loginSignup hidden-menu">
+            <a href="../html/loginSign.html">Login/Register</a>
+          </button>
+          <!-- Mobile Menu Icon -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -58,71 +71,155 @@
       <p class="subtitle">Level up your developer mindset</p>
     </header>
 
-    <!-- DESCRIPTION -->
-    <section class="description">
-      <h2>Project Description</h2>
-      <p>
-        Mindful Dev Bootcamp is a practical developer training program crafted
-        to help you build real-world projects while improving your coding
-        discipline, focus, and clarity. Each day unlocks a new challenge that
-        strengthens your skills as a mindful developer.
-      </p>
-    </section>
+    <div class="container">
+      <!-- project DESCRIPTION -->
+      <section class="project-description">
+        <div class="desc-container">
+          <!-- Left Part -->
+          <div class="desc-left">
+            <h2>Project Desciption</h2>
+            <p>
+              This project delivers a clean, modern, and responsive interface
+              built to ensure an engaging user experience. It focuses on
+              simplicity, usability, and balanced visual hierarchy that adapts
+              elegantly across all screen sizes.
+            </p>
 
-    <!-- CONTRIBUTORS -->
-    <section>
-      <h2>Contributors</h2>
-      <div class="contributors">
-        <div class="contributor-card">
-          <img src="https://avatar.iran.liara.run/public/12" alt="img1" />
-          <h3>Contributor Name 1</h3>
-          <p>Role / Task</p>
+            <p>
+              The layout is designed to work fluidly on both desktop and mobile
+              devices, offering intuitive navigation and a visually appealing
+              structure.
+            </p>
+          </div>
+
+          <!-- Right Part -->
+          <div class="desc-right">
+            <h3>Key Features</h3>
+            <ul>
+              <li>🌟 Elegant, responsive navbar</li>
+              <li>🔗 Footer with clean social icons</li>
+              <li>🎨 Vibrant gradient theme</li>
+              <li>📊 Animated stats & interactive timeline</li>
+              <li>✨ Smooth transitions for improved UX</li>
+            </ul>
+          </div>
         </div>
-        <div class="contributor-card">
-          <img src="https://avatar.iran.liara.run/public/47" alt="img2" />
-          <h3>Contributor Name 2</h3>
-          <p>Role / Task</p>
+      </section>
+
+      <!-- CONTRIBUTORS -->
+      <section>
+        <h2>Contributors Details</h2>
+        <div class="contributors">
+          <!-- load dynamically -->
         </div>
-        <div class="contributor-card">
-          <img src="https://avatar.iran.liara.run/public/29" alt="img3" />
-          <h3>Contributor Name 3</h3>
-          <p>Role / Task</p>
+        <div class="github-wrapper">
+          <h2>📈 Contribution Graph</h2>
+          <img
+            src="https://ghchart.rshah.org/Shivin1016"
+            alt="GitHub Contribution Chart"
+            class="contribution-chart"
+          />
+          <h2 style="margin-top: 40px">Event Timeline</h2>
+          <div id="timeline"></div>
+ 
+  <div id="pagination" class="pagination"></div>
+        </div>
+ 
+      </section>
+
+      <!-- TASKS -->
+      <section>
+        <h2>Bootcamp Tasks</h2>
+        <div class="boxes">
+          <div class="day-box">
+            <h3>Day 1</h3>
+            <ul>
+              <li>
+                <span style="font-weight: bold">Task 1:</span> Website Skeleton
+                (HTML + CSS)
+              </li>
+              <li>
+                <span style="font-weight: bold">Task 2:</span> Backend Setup &
+                Environment Preparation
+              </li>
+              <li>
+                <span style="font-weight: bold">Task 3:</span> Obtain Gemini API
+                Key And Secure It (Discord Session)
+              </li>
+              <li>
+                <span style="font-weight: bold">Task 4:</span> Design a Simple
+                Login & Signup Layout (Minimal Info)
+              </li>
+            </ul>
+          </div>
+
+          <div class="day-box">
+            <h3>Day 2</h3>
+            <ul>
+              <li>
+                <span style="font-weight: bold">Task 1:</span> ChatBot Backend:
+                Add Authentication Endpoints (Create User, Login, Profile)
+              </li>
+              <li>
+                <span style="font-weight: bold">Task 2:</span> ChatBot: Build
+                "Chat with Gemini" Core Interface (Web Version)
+              </li>
+              <li>
+                <span style="font-weight: bold">Task 3:</span> ChatBot: Design
+                Home Page after Login
+              </li>
+              <li>
+                <span style="font-weight: bold">Task 4:</span> ChatBot:
+                Integrate Authentication Endpoints
+              </li>
+            </ul>
+          </div>
+
+          <div class="day-box">
+            <h3>Day 3</h3>
+            <p>Tasks are comming soon</p>
+            <ul></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Shivani Prajapati</h3>
+          <p>Frontend Developer • UI/UX • Open Source Contributor</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contributors">Contributors</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social" id="contact">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="https://github.com/Shivin1016" target="_blank"
+              >🐱 GitHub</a
+            >
+            <a href="https://www.linkedin.com/shivani-p-959v1" target="_blank"
+              >💼 LinkedIn</a
+            >
+            <a href="mailto:shivaniprajapati11jan@gmail.com">✉️ Email</a>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- TASKS -->
-    <section>
-      <h2>Bootcamp Tasks</h2>
-
-      <div class="day-box">
-        <h3>Day 1</h3>
-        <ul>
-          <li>Setup project structure</li>
-          <li>Create homepage layout</li>
-          <li>Responsive base UI</li>
-          <li>Prepare components</li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2025 Shivani Prajapati — All Rights Reserved ❤️</p>
       </div>
-
-      <div class="day-box">
-        <h3>Day 2</h3>
-        <ul>
-          <li>Build login/signup UI</li>
-          <li>Add smooth animations</li>
-          <li>Interactive panel switching</li>
-        </ul>
-      </div>
-
-      <div class="day-box">
-        <h3>Day 3</h3>
-        <ul>
-          <li>Dark mode integration</li>
-          <li>Finalize responsive UI</li>
-          <li>Test components</li>
-        </ul>
-      </div>
-    </section>
+    </footer>
 
     <script>
       function toggleMode() {
@@ -155,5 +252,6 @@
       }
       type();
     </script>
+    <script src="../script/mainScript.js"></script>
   </body>
 </html>

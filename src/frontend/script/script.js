@@ -27,4 +27,4 @@ hiddenBtn1.addEventListener("click", () => {
   signUp.style.pointerEvents = "none";
   signIn.style.pointerEvents = "auto";
 });
-
+ 
