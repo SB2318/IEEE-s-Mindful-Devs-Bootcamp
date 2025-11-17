@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/chat.css';
 
-// Definicja typu propsów
 type ChatInputProps = {
   inputValue: string;
   setInputValue: (value: string) => void;
