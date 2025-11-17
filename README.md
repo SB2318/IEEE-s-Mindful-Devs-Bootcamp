@@ -11,12 +11,20 @@ To build a scalable and modular foundation for the **AI-driven Chatbot**, allowi
 
 ---
 
+**I’ve prepared some initial setup along with basic endpoints. Feel free to use them as a starting point while building the rest. (Below is the link)**.
+
+https://github.com/SB2318/IEEE-s-Mindful-Devs-Bootcamp/tree/main/chatbot
+
+### Visualization 
+https://uhsocial.in/docs/#/ChatBot/post_gemini_send
+
+
 ## 🧵 Event Structure: Two Tracks, One Goal
 
 ### **Track 1 — Backend Challenge (Skill Building)**  
 A simplified version of the core backend with the following tasks:
 
-#### ✅ **Tasks**
+#### ✅ **Problem Description**
 - [ ] Understand the project structure  
 - [ ] Set up environment & install dependencies  
 - [ ] Implement basic API endpoints  
@@ -51,6 +59,28 @@ This task is for contributors who want to work on a simple deployable frontend.
 - **Typescript preferred**
 
 ---
+
+### Tasks
+
+## Day 1:
+- Backend Setup & Environment Preparation (https://github.com/SB2318/UltimateHealth/issues/627)
+- Website Skeleton (HTML + CSS) (https://github.com/SB2318/UltimateHealth/issues/628)
+- Obtain Gemini API Key And Secure It (https://github.com/SB2318/UltimateHealth/issues/629)
+- Design a Simple Login & Signup Layout (Minimal Info) (https://github.com/SB2318/UltimateHealth/issues/630)
+  
+## Day 2:
+- Day 2 ChatBot Backend: Add Authentication Endpoints (Create User, Login, Profile) (https://github.com/SB2318/UltimateHealth/issues/632)
+- ChatBot: Build "Chat with Gemini" Core Interface (Web Version)  (https://github.com/SB2318/UltimateHealth/issues/633)
+- ChatBot: Design Home Page after Login (https://github.com/SB2318/UltimateHealth/issues/634)
+- ChatBot: Integrate Authentication Endpoints (https://github.com/SB2318/UltimateHealth/issues/635)
+
+## Day 3:
+
+- Day 3: AI ChatBot Bakend: Implement ChatBot Backend (Generative AI Integration) (https://github.com/SB2318/UltimateHealth/issues/637)
+- Day 3: AI ChatBot Development: Integrate Chat APIs into your website. (https://github.com/SB2318/UltimateHealth/issues/638)
+- Day 3: AI ChatBot Frontend: Final Navigation Set Up (https://github.com/SB2318/UltimateHealth/issues/639)
+
+
 
 ## 📂 Folder Structure
 ```
