@@ -1,0 +1,33 @@
+{
+  "name": "ultimate_health",
+  "version": "1.1.0",
+  "description": "ultimate health backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "dotenvx run -- node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SB2318/UltimateHealth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SB2318/UltimateHealth/issues"
+  },
+  "homepage": "https://github.com/SB2318/UltimateHealth#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@dotenvx/dotenvx": "^1.17.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.3.4",
+    "mongoose-sequence": "^6.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+   
+  }
+}
