@@ -98,7 +98,7 @@ button {
     appearance: none;
 }
 
-#login-button {
+.submit-button {
     width: max-content;
     padding-block: 12px;
     padding-inline: 24px;
@@ -108,18 +108,18 @@ button {
     transition: background-color 0.25s ease, border-radius 0.25s ease, scale 0.25s ease;
 }
 
-#login-button:hover {
+.submit-button:hover {
     background-color: #3559B2;
     border-radius: 22px;
     scale: 105%;
 }
 
-#signup-button {
+#redirect-button {
     font-weight: bold;
     transition: scale 0.25s ease;
 }
 
-#signup-button:hover {
+#redirect-button:hover {
     scale: 105%;
 }
 
