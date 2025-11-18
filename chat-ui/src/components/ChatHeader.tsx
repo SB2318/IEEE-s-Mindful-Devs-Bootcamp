@@ -1,9 +1,10 @@
-import '../styles/chat.css';
+import "../styles/chat.css";
+import GeminiIcon from "../assets/smart_toy_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"; // <-- import SVG
 
 const ChatHeader = () => {
   return (
     <div className="chat-header">
-      <span className="gemini-logo">🤖</span>
+      <img src={GeminiIcon} className="gemini-logo" alt="Gemini logo" />
       <span className="gemini-text">Gemini</span>
     </div>
   );

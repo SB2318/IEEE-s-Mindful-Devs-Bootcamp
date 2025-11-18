@@ -1,17 +1,13 @@
-import React from 'react';
-import '../styles/chat.css';
+import React from "react";
+import "../styles/chat.css";
 
 type ChatBubbleProps = {
   text: string;
-  role: 'user' | 'ai';
+  role: "user" | "ai";
 };
 
 const ChatBubble: React.FC<ChatBubbleProps> = ({ text, role }) => {
-  return (
-    <div className={`chat-bubble ${role}`}>
-      {text}
-    </div>
-  );
+  return <div className={`chat-bubble ${role}`}>{text}</div>;
 };
 
 export default ChatBubble;

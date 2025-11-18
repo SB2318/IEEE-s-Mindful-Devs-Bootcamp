@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+
 /* ===== GLOBAL CONTAINER WRAPPER (center whole chat) ===== */
 body {
   margin: 0;
@@ -7,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 /* ===== MAIN CHAT WRAPPER (rounded card) ===== */
@@ -19,7 +21,7 @@ body {
   max-height: 90vh;
   background: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 
@@ -153,4 +155,10 @@ body {
 
 .chat-input-container button:hover {
   opacity: 0.7;
+}
+.gemini-text {
+  font-family: "Sora", sans-serif;
+}
+.chat-input-container input {
+  font-family: "Sora", sans-serif;
 }
