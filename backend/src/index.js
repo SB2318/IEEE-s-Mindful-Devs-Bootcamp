@@ -11,8 +11,10 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 
 const authRoutes = require('./routes/auth');
+const geminiRoutes = require('./routes/gemini');
 
 app.use('/auth', authRoutes);
+app.use('/api/gemini', geminiRoutes);
 
 app.get('/', (req, res) => {
     res.send('API Is Working');
