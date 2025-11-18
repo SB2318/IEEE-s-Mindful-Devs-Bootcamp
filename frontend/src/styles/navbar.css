@@ -1,0 +1,44 @@
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--container-bg);
+    border-bottom: 1px solid var(--grey);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navbar-login-button {
+    padding: 8px 20px;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.navbar-login-button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+

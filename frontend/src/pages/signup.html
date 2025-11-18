@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mindful Devs</title>
     <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/toast.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="toast-container"></div>
     <div class="form-wrapper">
         <h1 class="title">MINDFUL DEVS</h1>
-        <form class="form">
+        <form class="form" id="signup-form">
             <div class="input-wrapper">
                 <label for="name">Name:</label>
-                <input id="name-input" type="text" name="name" />
+                <input id="name-input" type="text" name="name" required />
 
             </div>
             <div class="input-wrapper">
                 <label for="email">Email:</label>
-                <input id="email-input" type="text" name="email" />
+                <input id="email-input" type="email" name="email" required />
 
             </div>
             <div class="input-wrapper">
                 <label for="password">Password:</label>
-                <input id="password-input" type="password" name="password" />
+                <input id="password-input" type="password" name="password" required />
             </div>
-            <button id="login-button" type="submit">Login</button>
+            <button class="submit-button" type="submit">Sign Up</button>
             <div class="redirect-wrapper">
                 <p>Already have an account?</p>
-                <button id="signup-button" type="button">Login</button>
+                <button id="redirect-button" type="button">Login</button>
             </div>
         </form>
     </div>
+    <script src="../js/toast.js"></script>
+    <script src="../js/signup.js" defer></script>
 </body>
 
 </html>
